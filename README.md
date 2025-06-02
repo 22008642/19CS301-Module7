@@ -1,14 +1,19 @@
 # 19CS301-Module7
-EX: 7.1 RECURSION
-### Aim: To Write a Python Program to find the sum of all digits in a number using recursion
+EX: 7a RECURSION
+### Aim: 
+To Write a Python Program to find the sum of all digits in a number using recursion
 ### Algorithm:
 STEP 1: Start.
 
 STEP 2: Define a function.
 
-STEP 3: Create a base case for termination of the function. STEP 4: Create a recursive case to calculate the result.
+STEP 3: Create a base case for termination of the function.
 
-STEP 5: Print the result. STEP 6: Stop.
+STEP 4: Create a recursive case to calculate the result.
+
+STEP 5: Print the result. 
+
+STEP 6: Stop.
 
 ### Program:
 ```
@@ -24,10 +29,11 @@ print(sum)
 ### Output:
 ![image](https://github.com/user-attachments/assets/50acc657-266e-46e6-ab17-10358494e26c)
 
-### Result: Thus, the given program is implemented and executed successfully .
+### Result: 
+Thus, the given program is implemented and executed successfully .
  
 
-EX: 7.2 TYPES OF RECURSIONS
+EX: 7b TYPES OF RECURSIONS
 ### Aim: To Write a Python Program to find the sum of all digits in a number using recursion
 ### Algorithm:
 STEP 1: Start.
@@ -55,13 +61,15 @@ else:
 ### Output:
 ![image](https://github.com/user-attachments/assets/c4d6416f-d333-49c1-9dd5-0f774cdabb03)
 
-###Result: Thus, the given program is implemented and executed successfully.
+### Result:
+Thus, the given program is implemented and executed successfully.
  
 
 
-EX: 7.3 TAYLOR SERIES
+EX: 7c TAYLOR SERIES
 
-###Aim: To python program to evaluate the series using recursion by collecting the x and n values from the user.
+### Aim: 
+To python program to evaluate the series using recursion by collecting the x and n values from the user.
 ### ALGORITHM:
 STEP 1: Start.
 
@@ -89,12 +97,14 @@ print(series(x,n))
 ![image](https://github.com/user-attachments/assets/1d00b1a4-cecb-466f-8593-805f00d27461)
 
  
-### Result: Thus, the given program is implemented and executed successfully .
+### Result:
+Thus, the given program is implemented and executed successfully .
  
 
-EX: 7.4 Solve by recursion relation
+EX: 7d Solve by recursion relation
 
-### Aim: To Write a Python Program to find whether a string is a palindrome or not using recursion
+### Aim: 
+To Write a Python Program to find whether a string is a palindrome or not using recursion
 
 ### Algorithm:
 STEP 1: Start.
@@ -132,4 +142,41 @@ else:
 
 ### Result: Thus, the given program is implemented and executed successfully .
  
+EX: 7e Tail recursion
 
+### Aim:
+To Write a Python Program to convert a decimal number to a binary number using tail recursion.
+
+### Algorithm:
+Start
+
+Input: Take a decimal number n as input.
+
+Base Case: If n == 0, return 0 (base case of the recursion).
+
+Recursive Step: If n != 0, calculate the binary digit as n % 2 (remainder when divided by 2).
+
+Recursion: Call the decimal_binary() function recursively with n // 2 (integer division by 2).
+
+Combine Result: Append the binary digit to the result of the recursive call using 10 * result (shifting the binary digits left).
+
+Output: Return the final binary representation of the number.
+
+End
+
+### Program 
+```
+def decimal_binary(n):
+    if n==0:
+        return 0
+    else:
+        return (n% 2)+10*decimal_binary(int(n/2))
+n=int(input())
+print(decimal_binary(n))
+``` 
+
+### Output 
+![Screenshot 2025-06-02 133113](https://github.com/user-attachments/assets/e0ba1c46-6c3a-4608-9310-0c79a42e9a27)
+
+### Result 
+Thus, the given program is implemented and executed successfully .
